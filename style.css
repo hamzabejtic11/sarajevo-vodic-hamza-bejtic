@@ -36,3 +36,15 @@ nav a:hover { color: #b91c1c; }
 .contact-form .btn { align-self: flex-start; margin-top: 0; }
 
 footer { text-align: center; padding: 30px; background: #fff; border-top: 1px solid #e5e7eb; color: #6b7280; margin-top: 40px; }
+
+@media (max-width: 768px) {
+  .navbar { padding: 15px 20px; flex-wrap: wrap; }
+  .menu-btn { display: block; }
+  nav { display: none; width: 100%; flex-direction: column; margin-top: 15px; }
+  nav.open { display: flex; }
+  nav a { margin: 0; padding: 10px 0; }
+  .hero { margin: 20px; padding: 50px 25px; border-radius: 24px; }
+  .hero h1 { font-size: 2.3rem; }
+  .section { padding: 40px 20px; }
+  .facts, .cards { grid-template-columns: 1fr; }
+}
